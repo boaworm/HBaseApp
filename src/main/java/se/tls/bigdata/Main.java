@@ -10,10 +10,16 @@ import java.io.IOException;
  * Created by boaworm
  * (C) TLS
  */
+
 public class Main {
 
     public static void main(String[] args) {
+        System.setProperty("hadoop.home.dir", "/Users/boaworm/Software/hadoop-2.3.0");
+
         Configuration conf = HBaseConfiguration.create();
+
+        // /Volumes/2TB/src/HBaseApp/src/main/resources/hbase-site.xml
+
         try {
             HTable table1 = new HTable(conf, "myTable");
 
