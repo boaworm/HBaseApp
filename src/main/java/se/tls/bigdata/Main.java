@@ -21,7 +21,7 @@ public class Main {
         // /Volumes/2TB/src/HBaseApp/src/main/resources/hbase-site.xml
 
         try {
-            HTable table1 = new HTable(conf, "myTable");
+            HTable table1 = new HTable(conf, "BOOKING");
 
             byte[] tableName = table1.getTableName();
             System.out.println("TableName = " + tableName);

@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <repositories>
+        <!--
         <repository>
             <id>mapr-releases</id>
             <url>http://repository.mapr.com/maven/</url>
@@ -25,50 +26,67 @@
                 <enabled>true</enabled>
             </releases>
         </repository>
+        -->
         <repository>
             <id>mavenCentral</id>
             <url>http://repo1.maven.org/maven2/</url>
         </repository>
+
+        <repository>
+            <id>maven-hadoop</id>
+            <name>Hadoop Releases</name>
+            <url>https://repository.cloudera.com/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>cloudera-repos</id>
+            <name>Cloudera Repos</name>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
     </repositories>
 
     <dependencies>
+        <!--
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
             <version>2.3.0</version>
         </dependency>
+        -->
+        <!--
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
             <version>2.3.0</version>
         </dependency>
+        -->
+        <!--
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-core</artifactId>
             <version>1.2.1</version>
         </dependency>
+        -->
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>2.0.0-cdh4.5.0</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase</artifactId>
-            <version>0.94.18</version>
+            <version>0.94.6-cdh4.5.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.5</version>
-        </dependency>
+        <!--
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.8.1</version>
             <scope>test</scope>
         </dependency>
-
+        -->
     </dependencies>
 
 </project>
